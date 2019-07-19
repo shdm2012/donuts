@@ -1,0 +1,13 @@
+<h3>Create a Donut</h3>
+<%= form_with model: @donut do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.text_field :weight, placeholder: "weight" %>
+
+  <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @donut do |form| %>
+  <%= form.text_field :name, placeholder: 'name' %>
+  <%= form.text_field :weight, placeholder: 'weight' %>
+  <%= form.submit %>
+<% end %> -->

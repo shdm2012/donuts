@@ -1,0 +1,7 @@
+<h3>Update Donut Details</h3>
+<%= form_with model: @donut do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.text_field :weight, placeholder: "weight" %>
+
+  <%= form.submit %>
+<% end %>

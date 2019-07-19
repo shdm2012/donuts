@@ -1,0 +1,3 @@
+<h1><%= @donut.name %></h1>
+<h4><%= "Weight=" + @donut.weight %></h4>
+<%= link_to 'Remove', @donut, method: :delete, data: { confirm: 'Are you sure?' } %>

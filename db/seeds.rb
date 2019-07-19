@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+  Donut.create(name: 'Raspberry', weight: 150)
+  Donut.create(name: 'Strawberry', weight: 100)
+  Donut.create(name: 'Chocolate', weight: 210)
+  Donut.create(name: 'Cream', weight: 170)

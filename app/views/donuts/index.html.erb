@@ -1,0 +1,10 @@
+<h1>Donuts</h1>
+<table>
+  <% @donuts.each do |donut| %>
+    <tr>
+      <td><%= link_to donut.name, donut_path(donut) %></td>
+      <td><%= button_to 'Edit', edit_donut_path(donut), method: 'get'%></td>
+      <td><%= button_to 'Remove', donut_path(donut), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New donut", new_donut_path %>
