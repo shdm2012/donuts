@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   #get 'donuts/new'
   #get 'donuts/edit'
 
+  root 'donuts#index'
+
   resources :donuts
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
+
